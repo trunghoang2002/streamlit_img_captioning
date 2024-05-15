@@ -1,0 +1,6 @@
+myenv/
+get-pip.py
+images/
+test.py
+__pycache__/
+BEST_checkpoint_flickr30k_5_cap_per_img_5_min_word_freq.pth.tar
