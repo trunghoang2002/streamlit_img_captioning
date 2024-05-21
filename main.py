@@ -69,6 +69,7 @@ if uploaded_file is not None:
     i = 1
     for cap in complete_seqs:
         st.write(f'{i}.', ' '.join([rev_word_map[w] for w in cap[1:-1]]))
+        i += 1
 
     # Visualize caption and attention of best sequence
     st.header("Best sequence with attension:")
