@@ -11,6 +11,7 @@ import skimage
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import gdown
+import os
 
 # Filter out UserWarnings
 warnings.filterwarnings("ignore")
@@ -19,7 +20,8 @@ warnings.filterwarnings("ignore")
 file_id = '1dVucDQ9BuVwASl0ZH5Ba5LKflXMSi6W2'
 output = 'BEST_checkpoint_flickr30k_5_cap_per_img_5_min_word_freq.pth.tar'
 url = f'https://drive.google.com/uc?id={file_id}'
-gdown.download(url, output, quiet=False)
+if not os.path.exists(output):
+    gdown.download(url, output, quiet=False)
 
 # model config
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
