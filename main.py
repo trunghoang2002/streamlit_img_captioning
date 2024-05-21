@@ -61,6 +61,7 @@ if uploaded_file is not None:
     content = uploaded_file.read()
     st.image(content, caption="Uploaded Image.", use_column_width=True)
     img = np.array(Image.open(io.BytesIO(content)))
+    # print(img.shape)
 
     # Encode, decode with attention and beam search
     best_seq, alphas, complete_seqs = caption_image_beam_search(encoder, decoder, img, word_map, device, beam_size)
