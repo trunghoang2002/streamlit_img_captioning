@@ -10,7 +10,7 @@ start /wait "" miniconda.exe /S
 del miniconda.exe
 ```
 2. Install python 3.9
-- Open Anaconda Prompt(miniconda3)
+- Open Anaconda Prompt (miniconda3)
 ```bash
 cd /path/to/project
 conda create --name your_env_name python=3.9
