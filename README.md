@@ -1,4 +1,4 @@
-# Image captioning with encoder cnn & decoder lstm with attension network
+# Image captioning with encoder cnn & decoder lstm with attension network.
 
 ## How to run
 
