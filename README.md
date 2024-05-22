@@ -1,9 +1,9 @@
 # Image captioning with encoder cnn & decoder lstm with attension network.
 
-## How to run
+## How to run (Windows)
 
 1. Install miniconda
-
+- Open Windows PowerShell
 ```bash
 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe -o miniconda.exe
 start /wait "" miniconda.exe /S
