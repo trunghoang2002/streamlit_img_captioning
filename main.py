@@ -53,14 +53,14 @@ encoder = checkpoint['encoder']
 encoder = encoder.to(device)
 encoder.eval()
 
-st.title("Image captioning with encoder cnn & decoder lstm with attension network")
+st.title("Image captioning with encoder cnn & decoder lstm with attention network")
 
 uploaded_file = st.file_uploader("Upload an image to predict...", type="jpg")
 
 if uploaded_file is not None:
     content = uploaded_file.read()
     st.image(content, caption="Uploaded Image.", use_column_width=True)
-    img = np.array(Image.open(io.BytesIO(content)))
+    img = np.array(Image.open(io.BytesIO(content)).convert("RGB"))
     # print(img.shape)
 
     # Encode, decode with attention and beam search
