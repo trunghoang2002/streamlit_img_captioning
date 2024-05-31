@@ -1,4 +1,4 @@
-# Image captioning with encoder cnn & decoder lstm with attension network.
+# Image captioning with encoder cnn & decoder lstm with attention network.
 
 ## How to run (Windows)
 
