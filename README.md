@@ -23,3 +23,11 @@ pip install -r requirements.txt
 ```bash
 streamlit run main.py
 ```
+
+## Demo
+
+### Upload Interface
+![Demo Upload](images/demo_upload.png)
+
+### Result Display
+![Demo Result](images/demo_result.png)
